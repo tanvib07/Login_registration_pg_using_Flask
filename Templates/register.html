@@ -1,0 +1,111 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <style>
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#5b9aa0;  
+    font-family: 'Arial';  
+}  
+.login{  
+	float:center;
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #622569;  
+        border-radius: 15px ;  
+          
+}  
+h2{  
+    text-align: center;  
+    color: #622569;  
+    padding: 20px;  
+}  
+label{  
+    color: #d6d4e0;  
+    font-size: 17px;  
+}  
+#Uname{  
+	
+    width: 350px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 350px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#Email{  
+    width: 350px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+
+.button {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #b8a9c9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #d6d4e0;
+}
+
+
+.button:active {
+  background-color: #d6d4e0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+a{  
+     
+    color: red;  
+}  
+ </style>  
+</head>    
+<body>    
+    <h2>Registration Page</h2><br>    
+    <div class="login">    
+    <form id="login" method="post" action="/add_user">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Email Id     
+        </b>    
+        </label>    
+        <input type="text" name="Email" id="Email" placeholder="xyz@gmail.com"> 
+	<br><br>   
+	<label><b>Password    
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br><br>   
+ 
+        <button class="button">Register</button>      
+        <br><br>    
+        
+        <label>Account already exists ?</label> <a href="/">Go Back</a>    
+    </form>     
+</div>    
+</body>    
+</html>     
